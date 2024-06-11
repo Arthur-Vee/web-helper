@@ -1,0 +1,11 @@
+<div class="chatbot-container">
+    <div class="chat-history" id="chat-history">
+        <ul>
+            <li *ngFor="let message of messageHistory"> {{message.author}}: {{message.messageContent}}</li>
+        </ul>
+      </div>
+    <div class="chat-input">
+      <input [disabled]="loading" [value]="messageInput" [(ngModel)]="messageInput" type="text" id="user-message" (keydown.enter)="sendMessage()" placeholder="Type your message...">
+      <button [disabled]="loading" id="send-button" (click)="sendMessage()">Send</button>
+    </div>
+  </div>
