@@ -3,14 +3,14 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Message } from '../../MODELS/message.model';
 import { OpenaiService } from '../../SERVICE/openai.service';
-import { error } from 'console';
+
 
 
 
 @Component({
   selector: 'app-chatbot',
   standalone: true,
-  imports: [FormsModule,NgFor,],
+  imports: [FormsModule,NgFor],
   templateUrl: './chatbot.component.html',
   styleUrl: './chatbot.component.scss'
 })

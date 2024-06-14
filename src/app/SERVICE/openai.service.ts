@@ -2,8 +2,9 @@ import { Injectable } from '@angular/core';
 import { Message } from '../MODELS/message.model';
 
 
+
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class OpenaiService {
 
@@ -11,9 +12,11 @@ export class OpenaiService {
 
   constructor() {
 
-
   }
 
+ 
+
+  
   processUserInput(userInput: Message) {
     console.log("Received user input:", userInput.messageContent);
   }
